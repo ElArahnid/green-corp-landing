@@ -75,6 +75,37 @@ button {
   padding: 20px 25px;
   margin-top: 20px;
 }
+
 .about__info {
   max-width: 550px;
+}
+
+.form__container {
+  width: 550px;
+}
+
+.form {
+  background-color: #1d263a;
+  color: #fff;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1 {
+  font-size: 48px;
+}
+
+.form p {
+  font-size: 18px;
+  opacity: 0.65;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }

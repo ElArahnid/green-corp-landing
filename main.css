@@ -59,9 +59,19 @@ button:hover {
   width: 500px;
 }
 
+@keyframes rotation {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
 .about__sun-image {
   width: 100px;
   height: 100px;
+}
+
+img.about__sun-image {
+  animation: rotation 10s linear infinite;
 }
 
 .about h1 {

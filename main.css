@@ -218,13 +218,13 @@ footer {
     grid-template-columns: 1fr;
     
   }
-  img.header__logo {
+  .header__logo {
     height: 20px;
   }
-  img.about__image {
+  .about__image {
     width: 280px;
   }
-  img.about__sun-image {
+  .about__sun-image {
     width: 75px;
     height: 75px;
   }
@@ -251,13 +251,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
-  img.header__logo {
+  .header__logo {
     height: 20px;
   }
-  img.about__image {
+  .about__image {
     width: 280px;
   }
-  img.about__sun-image {
+  .about__sun-image {
     width: 75px;
     height: 75px;
   }

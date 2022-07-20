@@ -57,6 +57,7 @@ button:hover {
 
 .about__image {
   width: 500px;
+  /* border: 1px solid #ccc; */
 }
 
 @keyframes rotation {
@@ -68,6 +69,8 @@ button:hover {
 .about__sun-image {
   width: 100px;
   height: 100px;
+  position: absolute;
+  /* top: 0; */
 }
 
 img.about__sun-image {

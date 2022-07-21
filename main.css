@@ -267,3 +267,7 @@ footer {
     line-height: 40px;
   }
 }
+.fa-angle-right {
+  line-height: 12px;
+  vertical-align: sub;
+ }

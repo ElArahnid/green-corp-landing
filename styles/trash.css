@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #e8f7fc;   
+}
+
+.absolu {
+    background-color: antiquewhite;
+    box-sizing: border-box; 
+}
+
+header {
+    height: 100px;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(225, 250, 247);
+}
+
+main {
+    height: calc(auto - 200px);
+    background-color: rgb(238, 226, 177);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    column-gap: 10px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+}
+
+input {
+    width: 50%;
+}
+
+a[href$=forms], a[href$=lists] {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover[href$=forms], a:hover[href$=lists] {
+    color: red;
+}
+
+#lists, #forms {
+    margin-bottom: 20px;
+    /* border: 1px solid green; */
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #c54245;
+    border: 3px solid #3c9c33;
+    border-radius: 50%;
+}
+
+ul, #lists, #forms {
+    /* border: 1px solid #000; */
+    padding: 0 20px;
+}

@@ -6,127 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THIS IS SOME SANDBOX</title>
+    <link rel="stylesheet" href="styles/animation_trash.css">
+    <link rel="stylesheet" href="styles/trash.css">
     <style>
-        body {
-            margin: 0;
-        }
 
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            background-color: indigo;
-            height: 100vh;
-        }
-
-        @keyframes test {
-            from {
-                width: 10vh; height: 10vh; font-size: 100%;
-            }
-
-            50% {
-                width: 50vh; height: 50vh; font-size: 350%;
-            }
-
-            to {
-                width: 10vh; height: 10vh; font-size: 100%;
-            }
-        }
-
-        @keyframes beat {
-            from {
-                transform: rotate(-360deg) ;
-                height: 30px;
-                width: 30px;
-                background-color: red; font-size: 100%;
-            }
-
-            15% {
-                transform: rotateX(0);
-                height: 60vh;
-                width: 60vh;
-                background-color: orange; font-size: 200%;
-            }
-
-            30% {
-                transform: rotateX(180deg);
-                height: 90vh;
-                width: 90vh;
-                background-color: yellow; font-size: 300%;
-            }
-
-            45% {
-                height: 100vh;
-                width: 100vh;
-                background-color: green; font-size: 400%;
-            }
-
-            60% {
-                height: 90vh;
-                width: 90vh;
-                background-color: lightblue; font-size: 300%;
-            }
-
-            75% {
-                height: 60vh;
-                width: 60vh;
-                background-color: blue; font-size: 200%;
-            }
-
-            to {
-                height: 30vh;
-                width: 30vh;
-                background-color: violet; font-size: 100%;
-            }
-        }
-
-        .test {
-            width: 80px;
-            height: 80px;
-            background-color: aqua;
-            border-radius: 50%;
-            border-top: 1px solid white;
-            border-right: 2px dotted white;
-            border-bottom: 3px dashed white;
-            border-left: 2px groove white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .test:hover {
-            animation: test 2s ease 3;
-        }
-        .test:hover::before {
-            content: "Нажми ";
-            color: white;
-        }
-        .test:hover::after {
-            content: " меня";
-            color: white;
-        }
-        .test:active::before {
-            content: "Карусель";
-            color: white;
-        }
-        .test:active::after {
-            content: "ОХ!";
-            color: white;
-        }
-        .test:active {
-            animation: beat 5s ease-in infinite;
-
-        }
     </style>
 </head>
 
 <body>
-    <header></header>
-    <section class="content">
-        <div class="test">&nbsp;</div>
+    <section class="absolu">
+        <header>
+            <div class="logo"></div>
+            <nav>
+                <span><a href="#forms">формы</a></span>
+                <span><a href="#lists">списки</a></span>
+                <span></span>
+            </nav>
+        </header>
+        <main>
+            <section id="forms">
+                <h1>Формы</h1>
+                <form>
+                    <input type="text" placeholder="type=&quot;text&quot;">
+                    <input type="email" placeholder="type=&quot;email&quot;">
+                    <input type="adress" placeholder="type=&quot;adress&quot;">
+                    <input type="phone" placeholder="type=&quot;phone&quot;">
+                    <input type="number" placeholder="type=&quot;number&quot;">
+                </form>
+            </section>
+            <section id="lists">
+                <div><a href="https://html5book.ru/css-spiski/" target="_blank">подсказка</a></div>
+                <h1>Списки</h1>
+                <h2>Ненумированный список UL</h2>
+                <ul>
+                    <h3>Стандартный список</h3>
+                    <li>Просто что-то</li>
+                    <li>Еще что-то</li>
+                    <li>И еще что-то</li>
+                </ul>
+                <ul style="list-style-type: square;">
+                    <h3>Список с list-style-type: square;</h3>
+                    <li>Просто что-то</li>
+                    <li>Еще что-то</li>
+                    <li>И еще что-то</li>
+                </ul>
+                <ul style="list-style-type: circle;">
+                    <h3>Список с list-style-type: circle;</h3>
+                    <li>Просто что-то</li>
+                    <li>Еще что-то</li>
+                    <li>И еще что-то</li>
+                </ul>
+
+                <h2>Нумерованный список OL</h2>
+                <ol>
+                    <li>текст про что-то 1</li>
+                    <li>текст про что-то 2</li>
+                    <li>текст про что-то 3</li>
+                </ol>
+
+                <h2>Список-справочник DL(общий контейнер Description List)>DT(заголовок справки Description Term)>DD(контент справки Description Definition)</h2>
+                <dl>
+                    <dt>Заголовок списка 1
+                        <dd>Контент по списку 1</dd>
+                        <dd>Контент по списку 2</dd>
+                        <dd>Контент по списку 3</dd>
+                    </dt>
+                    <dt>Заголовок списка 2
+                        <dd>Контент по списку 1</dd>
+                        <dd>Контент по списку 2</dd>
+                        <dd>Контент по списку 3</dd>
+                    </dt>
+                    <dt>Заголовок списка 3
+                        <dd>Контент по списку 1</dd>
+                        <dd>Контент по списку 2</dd>
+                        <dd>Контент по списку 3</dd>
+                    </dt>
+                </dl>
+            </section>
+        </main>
+        <footer>Футер</footer>
     </section>
-    <footer></footer>
 </body>
 
 </html>

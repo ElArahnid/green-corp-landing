@@ -1,2 +1,24 @@
+@keyframes logo_rotate {
+  from {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 150%;
+    transform: rotate(180deg);
+    border-color: antiquewhite;
+    background-color: burlywood;
+    color: #3c9c33;
+    font-style: italic;
+  }
+  to {
+    font-size: 100%;
+    transform: rotate(360deg);
+}
+}
 
-
+.logo_rotate_act {
+  animation: logo_rotate 5s linear infinite;
+}
+.logo_rotate_act:hover {
+    animation-play-state: paused;
+}

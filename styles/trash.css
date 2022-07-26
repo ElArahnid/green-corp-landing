@@ -17,6 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    position: relative;
 }
 
 footer {
@@ -70,6 +71,14 @@ a:hover[href$=forms], a:hover[href$=lists] {
     background-color: #c54245;
     border: 3px solid #3c9c33;
     border-radius: 50%;
+    display: table-cell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: wheat;
+
 }
 
 ul, #lists, #forms {

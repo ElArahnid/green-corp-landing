@@ -13,12 +13,41 @@
   to {
     font-size: 100%;
     transform: rotate(360deg);
-}
+  }
 }
 
 .logo_rotate_act {
   animation: logo_rotate 5s linear infinite;
 }
 .logo_rotate_act:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes yablochko-moove {
+  from {
+    transform: rotate(0deg) translateX(110px) rotate(360deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(110px) rotate(-360deg);
+  }
+}
+
+@keyframes tarelochka-stop {
+  from {
+    background-color: aliceblue;
+  }
+  to {
+    background-image: url(/img/sun.png);
+    background-size:contain;
+  }
+}
+
+.yablochko-moove {
+  animation: yablochko-moove 3s linear infinite;
+}
+
+.tarelochka-stop:hover {
+  animation: tarelochka-stop 3s linear 1;
+  
+  
 }

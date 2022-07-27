@@ -1,87 +1,134 @@
 body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background-color: #e8f7fc;   
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #e8f7fc;
 }
 
 .absolu {
-    background-color: antiquewhite;
-    box-sizing: border-box; 
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 header {
-    height: 100px;
-    background-color: azure;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    position: relative;
+  height: 100px;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
 }
 
 footer {
-    height: 100px;
-    background-color: rgb(225, 250, 247);
+  height: 100px;
+  background-color: rgb(225, 250, 247);
+  padding: 20px;
 }
 
 main {
-    height: calc(auto - 200px);
-    background-color: rgb(238, 226, 177);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    align-items: start;
-    justify-content: space-evenly;
-    row-gap: 10px;
-    column-gap: 10px;
-    
+  height: calc(auto - 200px);
+  background-color: rgb(238, 226, 177);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-items: start;
+  justify-content: space-evenly;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: relative;
 }
 
 input {
-    width: 50%;
+  width: 50%;
 }
 
-a[href$=forms], a[href$=lists] {
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 600;
-    text-decoration: none;
+a[href*="amenu"] {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-a:hover[href$=forms], a:hover[href$=lists] {
-    color: red;
+a:hover[href*="amenu"] {
+  color: red;
 }
 
-#lists, #forms {
-    margin-bottom: 20px;
-    /* border: 1px solid green; */
+#amenu-lists,
+#amenu-forms,
+#amenu-anima {
+  margin-bottom: 20px;
+  /* border: 1px solid green; */
 }
 
-.logo {
-    width: 80px;
-    height: 80px;
-    background-color: #c54245;
-    border: 3px solid #3c9c33;
-    border-radius: 50%;
-    display: table-cell;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: wheat;
-
+#amenu-anima {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul, #lists, #forms {
-    /* border: 1px solid #000; */
-    padding: 0 20px;
+.absolu__logo {
+  width: 80px;
+  height: 80px;
+  background-color: #c54245;
+  border: 3px solid #3c9c33;
+  border-radius: 50%;
+  display: table-cell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: wheat;
 }
+
+ul,
+#lists,
+#forms {
+  /* border: 1px solid #000; */
+  padding: 0 20px;
+}
+
+/* Блоки анимации яблочка на тарелочке - начало */
+.tarelochka {
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  border: 2px solid rgb(37, 11, 184);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset -1px -1px 30px rgb(202, 212, 245);
+  transition: transform 3s linear;
+  
+}
+.yablochko {
+  background-color: #c54245;
+  width: 30%;
+  height: 30%;
+  border: 2px solid orange;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px black;
+  position: relative;
+}
+.listik {
+    width: 40%;
+    height: 40%;
+    background-color: darkgreen;
+    border: 1px solid #3c9c33;
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    border-radius: 0 70%;
+    transform: rotate(-20deg);
+}
+/* Блоки анимации яблочка на тарелочке - конец */

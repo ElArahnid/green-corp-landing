@@ -1,0 +1,77 @@
+@media (min-width: 200px) and (max-width: 400px)  {
+    body {
+        font-size: 110%;
+      }
+      
+      .absolu {
+        padding: 10px;
+      }
+      
+      header {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10px;
+        position: relative;
+        gap: 10px;
+      }
+      
+      footer {
+        height: 120px;
+        padding: 10px;
+      }
+      
+      main {
+        height: calc(auto - 240px);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+      }
+      
+      input {
+        width: 90%;
+      }
+      
+      a[href*="amenu"] {
+        font-size: 80%;
+      }
+      #amenu-lists,
+      #amenu-forms,
+      #amenu-anima {
+        margin-bottom: 10px;
+      }
+      .absolu__logo {
+        width: 60px;
+        height: 60px;
+      }
+      ul,
+      #lists,
+      #forms {
+        padding: 0 10px;
+      }
+      
+
+      .tarelochka {
+        width: 150px;
+        height: 150px;        
+      }
+      .yablochko {
+        width: 30%;
+        height: 30%;
+      }
+      @keyframes yablochko-moove {
+        from {
+          transform: rotate(0deg) translateX(60px) rotate(360deg);
+        }
+        to {
+          transform: rotate(360deg) translateX(60px) rotate(-360deg);
+        }
+      }
+      
+}

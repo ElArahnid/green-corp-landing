@@ -81,7 +81,6 @@ a:hover[href*="amenu"] {
   background-color: #c54245;
   border: 3px solid #3c9c33;
   border-radius: 50%;
-  display: table-cell;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,9 +106,8 @@ ul,
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset -1px -1px 30px rgb(202, 212, 245);
+  box-shadow: inset 5px 5px 30px rgb(141, 163, 224);
   transition: transform 3s linear;
-  
 }
 .yablochko {
   background-color: #c54245;
@@ -121,14 +119,14 @@ ul,
   position: relative;
 }
 .listik {
-    width: 40%;
-    height: 40%;
-    background-color: darkgreen;
-    border: 1px solid #3c9c33;
-    position: absolute;
-    bottom: 0;
-    right: -20px;
-    border-radius: 0 70%;
-    transform: rotate(-20deg);
+  width: 40%;
+  height: 40%;
+  background-color: darkgreen;
+  border: 1px solid #3c9c33;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  border-radius: 0 70%;
+  transform: rotate(-20deg);
 }
 /* Блоки анимации яблочка на тарелочке - конец */

@@ -32,22 +32,48 @@
   }
 }
 
-@keyframes tarelochka-stop {
+@keyframes tarelochka-border {
   from {
     background-color: aliceblue;
   }
+  50% {
+    box-shadow: inset 20px 20px 200px rgb(247, 243, 2);
+    border-color: yellow;
+  }
   to {
+    background-color: aliceblue;
+  }
+}
+
+@keyframes opacity_sun {
+  0% {
     background-image: url(/img/sun.png);
-    background-size:contain;
+    background-size: cover;
+    opacity: 0;
+
+  }
+  50% {
+    background-image: url(/img/sun.png);
+    background-size: cover;
+    opacity: 1;
+  }
+  100% {
+    background-image: url(/img/sun.png);
+    background-size: cover;
+    opacity: 0;
   }
 }
 
 .yablochko-moove {
   animation: yablochko-moove 3s linear infinite;
 }
-
-.tarelochka-stop:hover {
-  animation: tarelochka-stop 3s linear 1;
-  
-  
+.yablochko-stop:hover {
+  animation-play-state: paused;
+}
+.tarelochka-border:hover {
+  animation: tarelochka-border 3s linear infinite;
+}
+.opacity_sun:hover {
+  animation: opacity_sun linear 3s infinite ;
+  z-index: 999;
 }

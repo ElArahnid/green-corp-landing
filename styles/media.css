@@ -1,10 +1,6 @@
-@media (min-width: 200px) and (max-width: 400px)  {
+@media (min-width: 200px) and (max-width: 450px)  {
     body {
         font-size: 110%;
-      }
-      
-      .absolu {
-        padding: 10px;
       }
       
       header {
@@ -61,9 +57,14 @@
         width: 150px;
         height: 150px;        
       }
+
+      .tarelochka_fade {
+        width: 150px;
+        height: 150px;
+      }
       .yablochko {
-        width: 30%;
-        height: 30%;
+        width: 50px;
+        height: 50px;
       }
       @keyframes yablochko-moove {
         from {

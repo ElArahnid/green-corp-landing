@@ -53,6 +53,167 @@ button:hover {
   padding: 115px 60px;
 }
 
+.card__logo {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.card:nth-child(1) > div {
+  color: #ffb406,;
+}
+.card:nth-child(2) > div {
+  color: #ad1714;
+}
+.card:nth-child(3) > div {
+  color: #22a030;
+}
+
+.card {
+  padding: 35px 40px 25px 40px;
+  border: 1px solid #D9E4E6;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+.features__border {
+  margin: 50px 0 50px 0;
+  border: 1px solid #E6EAF4;
+}
+
+.features__feedback {
+  display: flex;
+}
+
+.features__feedback-left {
+  padding-right: 10px;
+}
+
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+.features__feedback-left p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-right {
+  display: flex;
+  /* align-items: stretch; */
+  /* justify-content: center; */
+  /* margin: auto; */
+}
+
+.features__box {
+  padding: 30px 40px 25px 40px;
+  border-radius: 25px;
+  color: white;
+  /* width: 50%; */
+  
+}
+
+.features__box h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+
+.features__rate-box {
+  background-color: #1D263A;
+  box-shadow: 0px 6px 0  rgb(29 38 58 / 20%);
+}
+
+.stars {
+  color: #ff7039;
+  display: flex;
+}
+
+.stars i {
+  display: block;
+  flex-wrap: nowrap;
+}
+
+.promo {
+  display: flex;
+}
+
+.promo__image {
+  background: url(../img/promo.jpg) center no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.promo__right {
+  background-color: #dd5f26;
+  width: 50%;
+  padding: 160px 60px;
+  box-sizing: border-box;
+}
+
+.promo__right p::before {
+  content: "";
+  display: inline-block;
+  background-color: #ec6b29;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 7px;
+  height: 7px;
+  vertical-align: middle;
+}
+
+.promo__right button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 15px 30px;
+  font-weight: 600;
+  
+}
+
+.promo__right button > i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.promo__right > div {
+  background-color: white;
+  padding: 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+.promo__right p {
+  opacity: 0.8;
+}
+
 .about {
   display: flex;
   justify-content: space-around;
@@ -218,6 +379,44 @@ footer {
   .features {
     padding: 50px 10px;
   }
+  .promo {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  
+  .promo__image {
+    background-size: cover;
+    width: 100%;
+    /* height: 50%; */
+    min-height: 300px;
+  }
+  .promo__right {
+    width: 100%;
+    padding: 50px 10px;
+    width: auto;
+  }
+  /**/
+  .cards {
+    grid-template-columns: auto;
+  }
+  .features__feedback {
+    flex-direction: column;
+  }
+  .features__feedback-left {
+    padding-right: 0px;
+  }
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+  .features__feedback-right {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .features__savings-box {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  /**/
   .about {
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -255,6 +454,41 @@ footer {
   .features {
     padding: 50px 10px;
   }
+  .promo {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .promo__image {
+    background-size: contain;
+    width: 100%;
+    /* height: 50%; */
+  }
+  .promo__right {
+    padding: 50px 10px;
+    width: auto;
+  }
+  /**/
+  .cards {
+    grid-template-columns: auto;
+  }
+  .features__feedback {
+    flex-direction: column;
+  }
+  .features__feedback-left {
+    padding-right: 0px;
+  }
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+  .features__feedback-right {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .features__savings-box {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  /**/
   .about {
     flex-direction: column-reverse;
     justify-content: flex-start;

@@ -48,6 +48,11 @@ button:hover {
   /* box-shadow: 0 16px 36px rgba(246 152 12 / 20%); */
 }
 
+.features {
+  background-color: #FFF;
+  padding: 115px 60px;
+}
+
 .about {
   display: flex;
   justify-content: space-around;
@@ -209,6 +214,9 @@ footer {
   .about {
     padding: 50px 10px;
   }
+  .features {
+    padding: 50px 10px;
+  }
   .about {
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -242,6 +250,9 @@ footer {
   .about {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .features {
+    padding: 50px 10px;
   }
   .about {
     flex-direction: column-reverse;

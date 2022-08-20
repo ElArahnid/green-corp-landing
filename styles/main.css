@@ -49,7 +49,7 @@ button:hover {
 }
 
 .features {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 115px 60px;
 }
 
@@ -209,7 +209,8 @@ footer {
 }
 @media (min-width: 320px) and (max-width: 720px) {
   section,
-  footer, .form,
+  footer,
+  .form,
   .form__containter,
   .about {
     padding: 50px 10px;
@@ -224,7 +225,6 @@ footer {
   .footer__container {
     display: grid;
     grid-template-columns: 1fr;
-    
   }
   .header__logo {
     height: 20px;
@@ -245,7 +245,8 @@ footer {
 
 @media (min-width: 720px) and (max-width: 1024px) {
   section,
-  footer, .form,
+  footer,
+  .form,
   .form__containter,
   .about {
     padding-left: 20px;
@@ -281,4 +282,4 @@ footer {
 .fa-angle-right {
   line-height: 12px;
   vertical-align: sub;
- }
+}

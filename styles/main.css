@@ -223,6 +223,7 @@ button:hover {
   background: url("img/back.png") no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .about__image {
@@ -267,6 +268,13 @@ img.about__sun-image {
 
 .about__info {
   max-width: 550px;
+}
+
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .form__container {

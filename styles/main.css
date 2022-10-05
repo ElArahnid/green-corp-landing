@@ -5,14 +5,22 @@ body {
 }
 
 header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: sticky;
+  background: transparent;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.header__scrolled {
   background-color: #fff;
-  top: 0;
-  z-index: 1;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -218,7 +226,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 115px;
+  padding-top: 200px;
   padding-bottom: 115px;
   background: url("img/back.png") no-repeat;
   background-position: center;

@@ -1,16 +1,13 @@
-const INCREASE_NUMBER_ANIMATION_SPEED = 50;
+const INCREASE_NUMBER_ANIMATION_SPEED = 77;
 const MAX_HAPPY_CLIENTS = 5000;
-const MAX_STEP_RANDOM = 100;
+const MAX_STEP_RANDOM = 555;
 
 function increaseNumberAnimationStep(i, element, endNumber) {
   if (i <= endNumber) {
-    if (i >= endNumber - MAX_STEP_RANDOM - 1) {
-      //   element.innerText = i + "+";
+    if (i >= endNumber - MAX_STEP_RANDOM) {
       element.innerText = MAX_HAPPY_CLIENTS + "+";
-      //   console.log(element.innerText, "<=")
     } else {
       element.innerText = i;
-      //   console.log(element.innerText, "=>")
     }
     i += Math.floor(Math.random() * (MAX_STEP_RANDOM - 1) + 1);
     setTimeout(function () {
@@ -21,7 +18,6 @@ function increaseNumberAnimationStep(i, element, endNumber) {
 
 function initIncreaseNumberAnimation() {
   const element = document.querySelector(".features__clients-count");
-  //   console.log(element.innerText);
   increaseNumberAnimationStep(
     Math.floor(Math.random() * (MAX_STEP_RANDOM - 1) + 1),
     element,
